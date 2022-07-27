@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+#root {
+  height: 100vh;
+  /* margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.third {
+  position: relative;
 }
+
+.thirdChild {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fourth {
+  position: relative;
+}
+
+.fourthChild {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  bottom: 1/2;
+  right: 0;
+  margin: auto;
+}
+
+.fifth {
+  display: flex;
+  justify-content: center;
+}
+
+.fifthChild {
+  align-self: center;
+}
+
+.sixth {
+  display: flex;
+}
+
+.sixthChild {
+  margin: auto;
+}
+
+.seventh {
+  display: grid;
+  place-items: center;
+}
+
+.eightth {
+  display: grid;
+}
+
+.eightthChild {
+  margin: auto;
+}
+
+.ninth {
+  display: grid;
+}
+
+.ninthChild {
+  place-self: center;
+}
+
+.tenth {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
